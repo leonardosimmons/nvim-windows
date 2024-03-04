@@ -2,8 +2,8 @@ function SetColorScheme(color)
 	color = color or "rose-pine"
 	vim.cmd.colorscheme(color)
 
-	vim.api.nvim_set_hl(0, "Normal", { bg = "#1A1A1A" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1A1A1A" })
+	vim.api.nvim_set_hl(0, "Normal", { bg = "#272727" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#272727" })
 
     vim.api.nvim_set_hl(0, "Directory", { fg = "#A9B7C6" }) 
     vim.api.nvim_set_hl(0, "Todo", { fg = "#A8A031" }) 
@@ -47,6 +47,7 @@ function SetColorScheme(color)
     vim.api.nvim_set_hl(0, "@method.call", { fg = "#FFC66D" }) 
     vim.api.nvim_set_hl(0, "@namespace", { fg = "#656486" }) 
     vim.api.nvim_set_hl(0, "@parameter", { fg = "#BCBEC4" }) 
+    vim.api.nvim_set_hl(0, "@punctuation.delimiter", { fg = "#CC7832" }) 
     vim.api.nvim_set_hl(0, "@property", { fg = "#916DA5" }) 
     vim.api.nvim_set_hl(0, "@regexp", { fg = "#42C3D4" }) 
     vim.api.nvim_set_hl(0, "@storageclass.lifetime", { fg = "#507874" }) 

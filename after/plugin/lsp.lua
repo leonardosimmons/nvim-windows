@@ -3,12 +3,17 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 lsp.ensure_installed({
+    'bashls',
+    'dockerls',
+    'emmet_ls',
 	'eslint',
     'intelephense',
+    'marksman',
 	'rust_analyzer',
     'tailwindcss',
 	'tsserver',
     'volar',
+    'yamlls'
 })
 
 local cmp = require('cmp')
@@ -32,7 +37,7 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
 	vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
 	vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
-	vim.keymap.set("n", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+	vim.keymap.set("n", "<C-H>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
 lsp.setup()
