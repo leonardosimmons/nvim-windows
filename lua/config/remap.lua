@@ -35,3 +35,5 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+vim.keymap.set('n', 'Zz', '<C-w>_|<C-w>\\|', {noremap = true, silent = true})
+vim.keymap.set('n', 'Zo', '<C-w>=', {noremap = true, silent = true})
